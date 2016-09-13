@@ -104,7 +104,7 @@ def main():
     }
 
     event = service.events().insert(calendarId='primary', body=event).execute()
-    print 'Event created: %s' % (event.get('htmlLink'))
+    print('Event created: %s' % (event.get('htmlLink')))
 
 
 if __name__ == '__main__':
